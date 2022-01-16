@@ -14,7 +14,7 @@ jobs:
           curl -sL "https://api.github.com/repos/$REMOTE_REPOSITORY/commits?sha=$REMOTE_BRANCH&per_page=1" | jq -r '[.[]][0]' > commit.json
         env:
           REMOTE_REPOSITORY: robimarko/openwrt
-          REMOTE_BRANCH: IPQ807x-5.10-backports
+          REMOTE_BRANCH: IPQ807x-5.15
       - name: Calculate hours since last commit
         id: calc
         run: |
@@ -63,8 +63,13 @@ jobs:
           echo "CONFIG_PACKAGE_luci-app-openvpn=y" >> .config
           echo "CONFIG_PACKAGE_luci-app-wireguard=y" >> .config
           echo "CONFIG_PACKAGE_luci-app-ddns=y" >> .config
+          echo "CONFIG_PACKAGE_luci-app-bcp38=y" >> .config
+          echo "CONFIG_PACKAGE_luci-ssl-openssl" >> .config
+          echo "CONFIG_PACKAGE_curl=y" >> .config
+          echo "CONFIG_LIBCURL_OPENSSL=y" >> .config
           echo "CONFIG_PACKAGE_openvpn-openssl=y" >> .config
           echo "CONFIG_PACKAGE_wireguard=y" >> .config
+          echo "CONFIG_PACKAGE_wpad-openssl=y" >> .config
           make defconfig
       - name: Enable WiFi on default config
         run: |
