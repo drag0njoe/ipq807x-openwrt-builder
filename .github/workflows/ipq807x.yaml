@@ -64,7 +64,7 @@ jobs:
           echo "CONFIG_PACKAGE_luci-app-wireguard=y\n" >> .config
           echo "CONFIG_PACKAGE_luci-app-ddns=y\n" >> .config
           echo "CONFIG_PACKAGE_luci-app-bcp38=y\n" >> .config
-          echo "CONFIG_PACKAGE_luci-ssl-openssl\n" >> .config
+          echo "CONFIG_PACKAGE_luci-ssl-openssl=y\n" >> .config
           echo "CONFIG_PACKAGE_curl=y\n" >> .config
           echo "CONFIG_LIBCURL_OPENSSL=y\n" >> .config
           echo "CONFIG_PACKAGE_openvpn-openssl=y\n" >> .config
