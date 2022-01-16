@@ -48,7 +48,7 @@ jobs:
           ./scripts/feeds install -a
       - name: Generate config for IPQ807x Generic
         run: |
-          echo "CONFIG_TARGET_ipq807x=y" > .config
+          echo "CONFIG_TARGET_ipq807x=y\n" > .config
           echo "CONFIG_TARGET_ipq807x_generic=y\n" >> .config
           echo "CONFIG_TARGET_MULTI_PROFILE=y\n" >> .config
           echo "CONFIG_TARGET_ALL_PROFILES=y\n" >> .config
@@ -60,16 +60,16 @@ jobs:
           echo "CONFIG_PACKAGE_kmod-qca-nss-drv-pppoe=y\n" >> .config
           echo "CONFIG_PACKAGE_kmod-qca-nss-ecm=y\n" >> .config
           echo "CONFIG_PACKAGE_kmod-qca-nss-drv-bridge-mgr=y\n" >> .config
-          echo "CONFIG_PACKAGE_luci-app-openvpn=y" >> .config
-          echo "CONFIG_PACKAGE_luci-app-wireguard=y" >> .config
-          echo "CONFIG_PACKAGE_luci-app-ddns=y" >> .config
-          echo "CONFIG_PACKAGE_luci-app-bcp38=y" >> .config
-          echo "CONFIG_PACKAGE_luci-ssl-openssl" >> .config
-          echo "CONFIG_PACKAGE_curl=y" >> .config
-          echo "CONFIG_LIBCURL_OPENSSL=y" >> .config
-          echo "CONFIG_PACKAGE_openvpn-openssl=y" >> .config
-          echo "CONFIG_PACKAGE_wireguard=y" >> .config
-          echo "CONFIG_PACKAGE_wpad-openssl=y" >> .config
+          echo "CONFIG_PACKAGE_luci-app-openvpn=y\n" >> .config
+          echo "CONFIG_PACKAGE_luci-app-wireguard=y\n" >> .config
+          echo "CONFIG_PACKAGE_luci-app-ddns=y\n" >> .config
+          echo "CONFIG_PACKAGE_luci-app-bcp38=y\n" >> .config
+          echo "CONFIG_PACKAGE_luci-ssl-openssl\n" >> .config
+          echo "CONFIG_PACKAGE_curl=y\n" >> .config
+          echo "CONFIG_LIBCURL_OPENSSL=y\n" >> .config
+          echo "CONFIG_PACKAGE_openvpn-openssl=y\n" >> .config
+          echo "CONFIG_PACKAGE_wireguard=y\n" >> .config
+          echo "CONFIG_PACKAGE_wpad-openssl=y\n" >> .config
           make defconfig
       - name: Enable WiFi on default config
         run: |
