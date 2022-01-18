@@ -57,9 +57,9 @@ jobs:
           echo "CONFIG_TARGET_INITRAMFS_COMPRESSION_ZSTD=y\n" >> .config
           echo "CONFIG_PACKAGE_luci=y\n" >> .config
           echo "CONFIG_PACKAGE_nss-firmware-ipq8074=y\n" >> .config
-          #echo "CONFIG_PACKAGE_kmod-qca-nss-drv-pppoe=y\n" >> .config
+          echo "CONFIG_PACKAGE_kmod-qca-nss-drv-pppoe=n\n" >> .config
           echo "CONFIG_PACKAGE_kmod-qca-nss-ecm=y\n" >> .config
-          #echo "CONFIG_PACKAGE_kmod-qca-nss-drv-bridge-mgr=y\n" >> .config
+          echo "CONFIG_PACKAGE_kmod-qca-nss-drv-bridge-mgr=n\n" >> .config
           echo "CONFIG_PACKAGE_luci-app-openvpn=y\n" >> .config
           echo "CONFIG_PACKAGE_luci-app-wireguard=y\n" >> .config
           echo "CONFIG_PACKAGE_luci-app-ddns=y\n" >> .config
