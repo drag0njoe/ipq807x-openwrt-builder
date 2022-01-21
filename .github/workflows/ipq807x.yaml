@@ -68,9 +68,16 @@ jobs:
           echo "CONFIG_PACKAGE_luci-ssl-openssl=y\n" >> .config
           echo "CONFIG_PACKAGE_curl=y\n" >> .config
           echo "CONFIG_LIBCURL_OPENSSL=y\n" >> .config
-          echo "CONFIG_PACKAGE_openvpn-openssl=y\n" >> .config
+          echo "CONFIG_PACKAGE_libustream-wolfssl=n\n" >> .config
           echo "CONFIG_PACKAGE_wireguard=y\n" >> .config
           echo "CONFIG_PACKAGE_wpad-openssl=y\n" >> .config
+          echo "CONFIG_PACKAGE_firewall=n\n" >> .config
+          echo "CONFIG_PACKAGE_ip6tables=n\n" >> .config
+          echo "CONFIG_PACKAGE_iptables=n\n" >> .config
+          echo "CONFIG_PACKAGE_kmod-ipt-offload=n\n" >> .config
+          echo "CONFIG_PACKAGE_firewall4=y\n" >> .config
+          echo "CONFIG_PACKAGE_nftables=y\n" >> .config
+          echo "CONFIG_PACKAGE_kmod-nft-offload=y\n" >> .config
           make defconfig
       - name: Enable WiFi on default config
         run: |
