@@ -71,6 +71,7 @@ jobs:
           echo "CONFIG_PACKAGE_libustream-wolfssl=n\n" >> .config
           echo "CONFIG_PACKAGE_wireguard=y\n" >> .config
           echo "CONFIG_PACKAGE_wpad-openssl=y\n" >> .config
+          echo "CONFIG_IPTABLES_NFTABLES=y\n" >> .config
           echo "CONFIG_PACKAGE_firewall=n\n" >> .config
           echo "CONFIG_PACKAGE_ip6tables=n\n" >> .config
           echo "CONFIG_PACKAGE_iptables=n\n" >> .config
