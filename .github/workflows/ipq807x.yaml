@@ -79,6 +79,7 @@ jobs:
           echo "CONFIG_PACKAGE_firewall4=y\n" >> .config
           echo "CONFIG_PACKAGE_nftables=y\n" >> .config
           echo "CONFIG_PACKAGE_kmod-nft-offload=y\n" >> .config
+          echo "CONFIG_NETFILTER_NETLINK=m\n" >> .config
           echo "CONFIG_NETFILTER_NETLINK_HOOK=m\n" >> .config
           make defconfig
       - name: Enable WiFi on default config
