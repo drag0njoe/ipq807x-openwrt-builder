@@ -69,6 +69,8 @@ jobs:
           echo "CONFIG_PACKAGE_curl=y\n" >> .config
           echo "CONFIG_LIBCURL_OPENSSL=y\n" >> .config
           echo "CONFIG_PACKAGE_libustream-wolfssl=n\n" >> .config
+          echo "CONFIG_PACKAGE_wpad-basic-wolfssl=n\n" >> .config
+          echo "CONFIG_PACKAGE_libwolfssl=n\n" >> .config
           echo "CONFIG_PACKAGE_wireguard=y\n" >> .config
           echo "CONFIG_PACKAGE_wpad-openssl=y\n" >> .config
           echo "CONFIG_IPTABLES_NFTABLES=y\n" >> .config
