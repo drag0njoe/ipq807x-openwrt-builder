@@ -82,11 +82,11 @@ jobs:
           echo "CONFIG_PACKAGE_announce=y" >> .config
           echo "CONFIG_PACKAGE_arp-scan=y" >> .config
           echo "CONFIG_PACKAGE_bind-host=y" >> .config
-          echo "CONFIG_PACKAGE_ca-certificates=y" >> .config                
-          echo "CONFIG_PACKAGE_ca-bundle=y" >> .config
-          echo "CONFIG_PACKAGE_ddns-scripts=y" >> .config
-          echo "CONFIG_PACKAGE_ddns-scripts-cloudflare=y" >> .config
-          echo "CONFIG_PACKAGE_ddns-scripts-services=y" >> .config
+          #echo "CONFIG_PACKAGE_ca-certificates=y" >> .config                
+          #echo "CONFIG_PACKAGE_ca-bundle=y" >> .config
+          #echo "CONFIG_PACKAGE_ddns-scripts=y" >> .config
+          #echo "CONFIG_PACKAGE_ddns-scripts-cloudflare=y" >> .config
+          #echo "CONFIG_PACKAGE_ddns-scripts-services=y" >> .config
           echo "CONFIG_PACKAGE_findutils-xargs=y" >> .config
           echo "CONFIG_PACKAGE_fping=y" >> .config
           echo "CONFIG_PACKAGE_gawk=y" >> .config
@@ -95,6 +95,7 @@ jobs:
           echo "CONFIG_PACKAGE_iwinfo=y" >> .config
           echo "CONFIG_PACKAGE_less=n" >> .config
           echo "CONFIG_PACKAGE_less-wide=y" >> .config
+          echo "CONFIG_PACKAGE_libustream-wolfssl=y" >> .config
           echo "CONFIG_PACKAGE_lldpd=y" >> .config
           echo "CONFIG_PACKAGE_miniupnpd=y" >> .config
           echo "CONFIG_PACKAGE_procd-seccomp=y" >> .config
@@ -107,9 +108,9 @@ jobs:
           echo "CONFIG_PACKAGE_luci-compat=y" >> .config
           echo "CONFIG_PACKAGE_luci-theme-bootstrap=y" >> .config
           echo "CONFIG_PACKAGE_luci-app-wireguard=y" >> .config
-          echo "CONFIG_PACKAGE_luci-app-ddns=y" >> .config
+          #echo "CONFIG_PACKAGE_luci-app-ddns=y" >> .config
           echo "CONFIG_PACKAGE_luci-app-bcp38=y" >> .config
-          echo "CONFIG_PACKAGE_luci-ssl=y" >> .config
+          #echo "CONFIG_PACKAGE_luci-ssl=y" >> .config
           echo "CONFIG_PACKAGE_luci-app-firewall=y" >> .config
           echo "CONFIG_PACKAGE_luci-app-qos=y" >> .config
           echo "CONFIG_PACKAGE_luci-app-upnp=y" >> .config
