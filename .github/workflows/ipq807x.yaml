@@ -72,7 +72,6 @@ jobs:
           #echo "CONFIG_PACKAGE_kmod-qca-nss-drv-bridge-mgr=y" >> .config
           
           # wpad full
-          echo "CONFIG_PACKAGE_libopenssl=n" >> .config
           echo "CONFIG_PACKAGE_wpad-mini=n" >> .config
           echo "CONFIG_PACKAGE_wpad-basic-wolfssl=n" >> .config
           echo "CONFIG_PACKAGE_wpad-wolfssl=y" >> .config
@@ -86,6 +85,7 @@ jobs:
           echo "CONFIG_PACKAGE_ddns-scripts=y" >> .config
           echo "CONFIG_PACKAGE_ddns-scripts-cloudflare=y" >> .config
           echo "CONFIG_PACKAGE_ddns-scripts-services=y" >> .config
+          echo "CONFIG_PACKAGE_dnsmasq=n" >> .config
           echo "CONFIG_PACKAGE_dnsmasq-full=y" >> .config
           echo "CONFIG_PACKAGE_findutils-xargs=y" >> .config
           echo "CONFIG_PACKAGE_fping=y" >> .config
