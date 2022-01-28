@@ -72,6 +72,7 @@ jobs:
           #echo "CONFIG_PACKAGE_kmod-qca-nss-drv-bridge-mgr=y" >> .config
           
           # wpad full
+          echo "CONFIG_PACKAGE_libopenssl=n" >> .config
           echo "CONFIG_PACKAGE_wpad-mini=n" >> .config
           echo "CONFIG_PACKAGE_wpad-basic-wolfssl=n" >> .config
           echo "CONFIG_PACKAGE_wpad-wolfssl=y" >> .config
