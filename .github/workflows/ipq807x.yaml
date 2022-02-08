@@ -13,7 +13,7 @@ jobs:
         run: |
           curl -sL "https://api.github.com/repos/$REMOTE_REPOSITORY/commits?sha=$REMOTE_BRANCH&per_page=1" | jq -r '[.[]][0]' > commit.json
         env:
-          REMOTE_REPOSITORY: robimarko/openwrt
+          REMOTE_REPOSITORY: drag0njoe/openwrt
           REMOTE_BRANCH: ipq807x-5.15
       - name: Calculate hours since last commit
         id: calc
@@ -40,7 +40,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          repository: robimarko/openwrt
+          repository: drag0njoe/openwrt
           ref: ipq807x-5.15
       - name: Update and install feeds
         run: |
