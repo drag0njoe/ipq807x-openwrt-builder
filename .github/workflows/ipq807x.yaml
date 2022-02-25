@@ -70,6 +70,7 @@ jobs:
           #echo "CONFIG_PACKAGE_kmod-qca-nss-ecm=y" >> .config
           #echo "CONFIG_PACKAGE_kmod-qca-nss-drv-pppoe=y" >> .config
           #echo "CONFIG_PACKAGE_kmod-qca-nss-drv-bridge-mgr=y" >> .config
+          echo "CONFIG_PACKAGE_qca-ssdk-shell=y\n" >> .config
           
           # wpad full
           echo "CONFIG_PACKAGE_wpad-mini=n" >> .config
